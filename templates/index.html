@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translator</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Text Translator</h1>
+    <img src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code">
+
+    <p>Scan the QR code or open the following link on your mobile device:</p>
+    <p><a href="{{ url_for('translate_page') }}">{{ url_for('translate_page') }}</a></p>
+</body>
+</html>
